@@ -18,6 +18,7 @@ $("#buttons-view").on("click", ".cuteDog", function(){
       var dogBox = $("<div>")
       dogBox.addClass("dogBox");
       var dogImages = $("<img>");
+      
       //creating a class to hold the dogs images
       dogImages.addClass("doggy");
       dogImages.attr("src", still);
@@ -61,7 +62,7 @@ function renderButtons() {
     //adding a class to the each buttons
     generate.addClass("cuteDog");
     //adding a data-attribute to each one
-    generate.attr("data-name",dogs[j]);
+    generate.attr("data-name", dogs[j]);
 
     generate.text(dogs[j]);
     //adding teh button to the buttons-view div
