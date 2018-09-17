@@ -14,7 +14,7 @@ In this APP, I used the GIPHY API to make a dynamic web page that populates with
 
 ## Screen Shots
 
-![Homepage](assets/images/dogs.gif)
+![Homepage](assets/images/dog.gif)
 
 ## Functionality
 GifTastic mainly used AJAX call to hit Giphy's API to get the specific data that users want to search, which based on the core of functions as below:

@@ -1,6 +1,6 @@
 h1 {
   font-size:50px;
-  margin-left: 50px;
+  margin: 50px 0px 50px 50px;
 }
 
 h3 {
@@ -8,23 +8,25 @@ h3 {
   margin-left: 50px;
 }
 
-.note {
+/* .note {
   font-size: 15px;
   margin-left: 50px;
-  margin-right: 590px;
-}
+  margin-right: 380px;
+} */
 
 html {
-  background-image:url("http://walldiskpaper.com/wp-content/uploads/2015/01/Dog-Wallpaper-Spike-And-Skull.jpg");
-  background-repeat: repeat-y;
-  background-position: center top;
-  background-size: 100% 100%;
+  background-color: rgb(254,213,11);
+  background-image: url("../images/puppy-png-7.png");
+  /* background-image:url("http://walldiskpaper.com/wp-content/uploads/2015/01/Dog-Wallpaper-Spike-And-Skull.jpg"); */
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 50% 90%;
   height: 100%;
 }
 
-label {
+form {
   padding: 5px;
-  margin-left: 50px;
+  margin: 100px 0px 50px 50px;
   font-size: 20px;
 }
 
@@ -64,23 +66,34 @@ button:hover {
 }
 
 #dogs-view {
-  margin-right: 500px;
+  margin-top: 80px;
 }
 
 .doggy {
   width: 240px;
   height: 200px;
-  display:block;
+  display: block;
 
-}
-
-.dogBox {
-  float:left;
-  margin-left: 30px;
-  display:block;
-  font-size: 15px;
 }
 
 .doggy:hover {
   cursor: pointer;
+}
+
+.dogBox {
+  float:left;
+  width: 240px;
+  height: 250px;
+  border-radius: 4px;
+  margin: 5px 0px 5px 30px;
+  display:block;
+  font-size: 15px;
+  background-color:whitesmoke;
+  border: 10px solid whitesmoke;
+}
+
+
+
+.tag p {
+  margin-left: 10px;
 }
