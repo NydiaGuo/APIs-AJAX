@@ -1,4 +1,4 @@
-var dogs = ["Bulldog","Dachshund","German Shepherd", "Golden Retriever","Labrador Retriever", "Beagle","Siberian Husky", "Poodle"];
+var dogs = ["Bulldog","Dachshund","German Shepherd", "Golden Retriever","Labrador Retriever", "Beagle","Siberian Husky"];
 
 $("#buttons-view").on("click", ".cuteDog", function(){
   var dog = $(this).attr("data-name");
@@ -60,7 +60,8 @@ function renderButtons() {
     //generating buttons for each dog in the array
     var generate = $("<button>");
     //adding a class to the each buttons
-    generate.addClass("cuteDog");
+    generate.addClass("btn btn-warning cuteDog");
+  
     //adding a data-attribute to each one
     generate.attr("data-name", dogs[j]);
 
@@ -73,6 +74,7 @@ function renderButtons() {
 
 //adding a click event listener to all elements with a 'dog 'class
 $("#add-dogs").on("click", function(event) {
+  
   event.preventDefault();
 
 //taking the input texbox from users

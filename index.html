@@ -3,38 +3,62 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Giphy API</title>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
 </head>
 
 
 <body>
+  <div class="container-fluid">
+  <div class="bg">
 
-  <div class="container">
-   
-    <h1>Cute Dogs Everywhere</h1>
-    <!-- <h3>How to search them?</h3> -->
-    <!-- <p class="note">&nbsp&nbsp Please put any types of dog that you like, after you click on "Search" button, it will automatically create a specific button for the dog type you just entered.</p> -->
-    <form id="dogs-form">
-      <label for="dogs-input">Search Dog Types:</label>
-      <input type="text" id="dogs-input">
+  <div class="row justify-content-center">
+    <!-- <div class="col-lg-3"></div> -->
+    <div class="col-lg-6">
+     
+      <p class="h1">Cute Dogs Everywhere</p>
+      <p>They are our best friends! No matter when, they will stay on your side!</p>
 
-      <!-- Button triggers new dogs to be added -->
-      <input id="add-dogs" type="submit" value="Search" class='enableOnInput' disabled='disabled'>
-    </form>
+      <div class="input-group">
+        
+        <input type="text" class="form-control" placeholder="dog breed" id="dogs-input">
+        <input id="add-dogs" type="button" value="Search" class="enableOnInput">
+      
+      </div>
+      
+      <!-- Put the buttons here-->
+      <div id="buttons-view"></div>
+      <!-- <div class="col-lg-3"></div> -->
+    </div>
+  </div>
 
-    <!-- <div class="note">
-      <p>&nbsp&nbsp* You can click on any of the buttons below to see the cute dogs</p>
-      <p>&nbsp&nbsp* Also, please click on any of Giphy to see the surprise after you click the buttons</p>
-    </div> -->
-    <!-- Put the buttons here-->
-    <div id="buttons-view"></div>
-
-    <!-- Put the pics here-->
-    <div id="dogs-view"></div>
+  <!-- Put the pics here-->
+  <div class="row justify-content-center">
+    <div class="col-12">
+      <div id="dogs-view"></div>
+    </div>
   </div>
 
 
+  </div>
+
+</div>
+<div class="row" style="height:60px"></div>
+<div class="row justify-content-center fixed-bottom footer-div">
+    <div class="col-3 justify-content-center">    
+      <p>&copy; Copyright 2018 NI Guo (Nydia)</p>
+    </div>
+</div>
+
+  
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript"  src="assets/javascript/javascript.js"></script>
 
